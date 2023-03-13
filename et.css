@@ -7,7 +7,7 @@ ul li{
     list-style: none;
     float: left;
     line-height: 100px;
-    width: 25%;
+    width: 250px;
 }
 
 ul li a{
@@ -102,4 +102,19 @@ hr{
 }
 
 
+ul li{
+    position: relative;
+}
+
+ul li ul{
+    display: none;
+    position: absolute;
+    background-color: darkgreen
+}
+
+ul li:hover ul{
+    display: block;
+
+
+}
 
