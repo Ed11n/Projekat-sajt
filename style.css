@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:aliceblue;
+    padding-top: 100px;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #eee;
+    position: sticky;
+    top: 0;
+}
+ul {
+    float: left;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    line-height: 60px;
+    width: 250px;
+    /* 1 korak */
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 24px;
+    color: #1e1e1e;
+    padding: 0 20px;
+    text-align: center;
+    transition:  background-color 1s ease-out;
+}
+/* drugi korak */
+ul li ul {   
+    display: none;
+    position: absolute;
+    background-color: #eeeeee;
+}
+ul li:hover ul {   
+    display: block;
+
+}
+
+ul li ul li a {   
+    padding: 5 20px;
+}
+ul li ul li a:hover{
+    background-color: aqua;
+}
+/*  */
+
+ul li a:hover {
+    background-color:red;
+}
+
+
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: white;
+}
+
+
+/* Drugi cas slike sa prve */
+#logo{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+h2 {
+    margin: 10px 0;
+}
+header p::first-letter {
+    font-size: 40px;
+}
+main {
+    padding: 20px 15px;
+}
+figure {
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+figure img {
+    display: block;
+    width: 25%;
+    height: 25%;
+    margin: 5px auto;
+}
+figcaption {
+    text-align: center;
+}
+
+/* treci cas slike sa druge strane */
+#pic {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#pic img {
+    width: 25%;
+    height: 25%;
+    display:inline-block;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+/* treca strana rase */
+.rase figure a img {
+    width: 100%;
+    
+    border: green 1px solid;
+} 
+.rase a:hover img {
+    border: blue 1px solid;
+}
+.rase figcaption{
+    font-size: 20px;
+    font-weight: bold;
+}
+/* posebne strane rasa */
+.pojedinacno section img {
+    display: block;
+    width: 400px;
+    margin: 20px auto;
+}
+
+/* FORME */
+.forme{
+    margin: 20px 0;
+}
+form{
+    margin: 0 auto;
+    width: 300px;
+}
+fieldset{
+    padding: 5px;
+}
+.dugme{
+    margin-top: 15px;
+    padding: 5px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+}
+footer a img{
+    width: 40px;
+    height: 40px;
+    transition: width 2s, height 2s;
+    
+}
+footer img:hover{
+    height: 100px;
+    width: 100px;
+}
+input[type=text]{
+    width: 282px;
+}
+
+input[type=email]{
+    width: 282px;
+}
+textarea{
+    width: 298px;
+}

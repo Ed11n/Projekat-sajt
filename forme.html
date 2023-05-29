@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <!-- <script src="script.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pic/favicon.ico">
+</head>
+<body>
+     
+    <nav>
+        <div class="wrapper">
+            <ul>
+                <li><a href="index.html">POCETNA</a></li>
+                <li><a href="Izgled.html">IZGLED</a></li>
+                <li><a href="rase.html">RASE</a>
+                    <ul>
+                        <li><a href="siba.html">Siba</a></li>
+                        <li><a href="sarplaninac.html">Sarplaninac</a></li>
+                        <li><a href="jazavicar.html">Jazavicar</a></li>
+                    </ul>
+                </li>
+                <li><a href="forme.html">KONTAKT</a></li>
+            </ul>
+        </div>     
+    </nav>
+    <div class="wrapper">
+        <main>
+            <section>
+                <h1>UNOS</h1>
+                <p>Na ovoj veb stranici moguce je uneti sve potrebne informacije koristeci HTML forme u kojem kod vidu zelimo. Rad prikaza mogucnosti formi postavicemo i vise nego potreban broj formi radi demonstracije</p >
+            </section>
+            <section class="forme">
+                <form>
+                    <fieldset>
+                        <legend>Personalna informacija</legend>
+                        <label for="fime">Ime:</label><br>
+                        <input type="text" id="fime" name="fime" placeholder="Unesite ime"><br>
+                        <label for="fprezime">Prezime:</label><br>
+                        <input type="text" id="fprezime" name="fprezime" value="Unesite prezime"><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Unesite detalje rase</legend>
+                        <input type="radio" id="muzjak" name="pol">
+                        <label for="muzjak">Muzjak</label><br>
+                        <input type="radio" id="zenka" name="pol">
+                        <label for="zenka">Zenka</label><br>
+                        <br>
+                        <input type="checkbox" id="siba" name="rasa1">
+                        <label for="siba">Siba inu</label><br>
+                        <input type="checkbox" id="sar" name="rasa2">
+                        <label for="sar">Sarplaninac</label><br>
+                <label for="jaz">Jazavicar</label><br>
+                        <br>
+                                    <input type="checkbox" id="jaz" name="rasa3">
+                    <label for="rase">Biraj rasu</label>
+                        <!-- <select id="rase" name="rase" size="2" multiple> -->
+                        <select id="rase" name="rase">
+                            <option>SIba</option>
+                            <option>Sarplaninac</option>
+                            <option>Jazavicar</option>
+                        </select>
+                        <br><br>
+                        <label for="email">Unesite vas email:</label>
+                        <input type="email" name="email">
+                    </fieldset>
+                    <br>
+                    <textarea name="poruka" rows="10" cols="30" placeholder="Unesite dodatnu informaciju za omiljenu rasu"></textarea>
+                    
+                    <br>
+                    <input type="submit" class="dugme"><br>
+                    <input type="reset" class="dugme">    
+                </form>
+            </section>
+            <footer>
+                <a href="https://www.facebook.com/"><img src="pic/Facebook.png" alt="Facebook link" id="slika"></a>
+            <footer>
+        </main>
+    </div>
+</body>
+</html>
+                                
